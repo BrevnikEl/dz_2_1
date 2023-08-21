@@ -1,12 +1,12 @@
 public class Main {
     public static void main(String[] args) {
 
-        int o = 200; //остаток на счету
-        int i = 1100; //столько положили
-        if (i>=1000) {
-            System.out.println(("Вам начислено " + (o+i)/100 * 1) + " бонусов");
+        int balance = 200; //остаток на счету
+        int incoming_money = 1100; //столько положили
+        if (incoming_money >= 1000) {
+            System.out.println(("Вам начислено " + (balance + incoming_money) / 100 * 1) + " бонусов");
         } else {
-            System.out.println("У вас на остатке " + (o+i));
+            System.out.println("У вас на остатке " + (balance + incoming_money));
         }
     }
 }
